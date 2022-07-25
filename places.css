@@ -29,16 +29,19 @@ main li img {
   padding: 40px;
   display: flex;
   flex-direction: column;
-}
-
-.item-content h2 {
-  position: fixed;
-}
-
-.item-content p{
-  padding-top: 40px;
+  justify-content: space-between;
 }
 
 .actions {
-  padding-top: ;
+  text-align: right;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 6px;
+  color: rgb(22, 211, 228);
+}
+
+.actions a:hover {
+  background-color: rgb(235, 253, 255);
 }
