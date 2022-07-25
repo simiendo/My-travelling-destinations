@@ -9,9 +9,15 @@ header {
 
 main ul {
   width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+
+
+li:nth-of-type(3){
+  grid-column: 1 / span 2;
 }
 
 main li {
@@ -22,9 +28,10 @@ main li {
   overflow: hidden;
 }
 
+
 main li img {
   width: 300px;
-  height: 280px;
+  height: 100%;
   object-fit: cover;
 }
 
